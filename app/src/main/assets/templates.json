@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "source": "HyperOS Focus Island Development Guide and 小米超级岛通知模板库 (2026-01-29)",
+  "templates": [
+    {"id":"charging","name":"充电进度","category":"状态进度","ticker":"正在充电","title":"68%","frontTitle":"充电中","content":"预计 24 分钟充满","icon":"miui.focus.pic_battery","progress":68,"business":"charging","component":"progress"},
+    {"id":"delivery","name":"包裹配送","category":"出行服务","ticker":"包裹派送中","title":"还有 2 站","frontTitle":"快递配送","content":"预计 10:35 送达","icon":"miui.focus.pic_delivery","progress":72,"business":"delivery","component":"progress"},
+    {"id":"ride","name":"行程出发","category":"出行服务","ticker":"司机已接单","title":"约 6 分钟","frontTitle":"前往目的地","content":"车辆正在赶来","icon":"miui.focus.pic_taxi","progress":35,"business":"taxi","component":"progress"},
+    {"id":"timer","name":"专注计时","category":"效率工具","ticker":"专注进行中","title":"25:00","frontTitle":"深度专注","content":"保持节奏，稍后休息","icon":"miui.focus.pic_timer","progress":0,"business":"timer","component":"timer"},
+    {"id":"music","name":"音乐播放","category":"娱乐媒体","ticker":"正在播放","title":"Midnight City","frontTitle":"M83 · Hurry Up, We're Dreaming","content":"正在播放 · 03:42","icon":"miui.focus.pic_music","progress":58,"business":"media","component":"progress"},
+    {"id":"coffee","name":"咖啡订单","category":"生活服务","ticker":"订单已接单","title":"制作中","frontTitle":"咖啡订单","content":"预计 5 分钟后取餐","icon":"miui.focus.pic_coffee","progress":45,"business":"order","component":"progress"},
+    {"id":"workout","name":"运动记录","category":"效率工具","ticker":"跑步进行中","title":"3.20 km","frontTitle":"户外跑步","content":"用时 18 分钟 · 配速 5'37\"","icon":"miui.focus.pic_sport","progress":40,"business":"sport","component":"progress"},
+    {"id":"chat","name":"即时消息","category":"社交消息","ticker":"新消息","title":"晚点见！","frontTitle":"小林 · 微信","content":"我已经到楼下了","icon":"miui.focus.pic_profile","progress":0,"business":"chat","component":"chat"},
+    {"id":"event","name":"日程提醒","category":"效率工具","ticker":"即将开始","title":"产品评审","frontTitle":"15:30 · 会议室 A","content":"与设计团队的每周同步","icon":"miui.focus.pic_calendar","progress":0,"business":"calendar","component":"text"},
+    {"id":"order","name":"外卖配送","category":"生活服务","ticker":"骑手正在配送","title":"预计 12 分钟","frontTitle":"午餐配送中","content":"骑手距你 800 米","icon":"miui.focus.pic_delivery","progress":63,"business":"delivery","component":"progress"},
+    {"id":"flight","name":"航班行程","category":"出行服务","ticker":"登机提醒","title":"开始登机","frontTitle":"MU5101 · 前往上海","content":"登机口 C23 · 预计 16:40 起飞","icon":"miui.focus.pic_plane","progress":80,"business":"travel","component":"progress"},
+    {"id":"custom","name":"自定义空白","category":"自定义","ticker":"焦点提醒","title":"我的超级岛","frontTitle":"自定义信息","content":"编辑文案并生成 JSON","icon":"miui.focus.pic_small","progress":0,"business":"custom","component":"text"}
+  ]
+}
