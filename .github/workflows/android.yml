@@ -44,6 +44,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "$GITHUB_REF_NAME" app/build/outputs/apk/debug/app-debug.apk \
-            --title "焦点岛 Playground $GITHUB_REF_NAME" \
-            --notes "HyperOS Focus Island Playground cloud build. Debug-signed APK for testing. Super Island display depends on device OS, notification permission and Xiaomi's app allowlist."
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" app/build/outputs/apk/debug/app-debug.apk --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" app/build/outputs/apk/debug/app-debug.apk \
+              --title "焦点岛 Playground $GITHUB_REF_NAME" \
+              --notes "HyperOS Focus Island Playground cloud build. Debug-signed APK for testing. Super Island display depends on device OS, notification permission and Xiaomi's app allowlist."
+          fi
